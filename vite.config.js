@@ -1,7 +1,10 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
 
-// https://vitejs.dev/config/
+//for deploy on github pages
+const publicPath = process.env.NODE_ENV === "production" ? "/hero-guild/" : "/";
+
 export default defineConfig({
-  plugins: [vue()]
-})
+  base: publicPath,
+  plugins: [vue()],
+});
