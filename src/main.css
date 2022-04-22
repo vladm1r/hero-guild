@@ -1,0 +1,13 @@
+@import "normalize.css";
+
+.wrapper {
+  height: 100vh;
+}
+
+.main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  background: silver;
+}
