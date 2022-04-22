@@ -1,9 +1,11 @@
-<script setup></script>
+<script setup>
+import Header from "./components/TheHeader.vue";
+</script>
 
 <template>
-  <div class="wrapper">
-    <div class="main">
-      <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <div class="h-screen bg-sky-50">
+    <div class="max-w-screen-xl mx-auto h-full">
+      <Header />
     </div>
   </div>
 </template>
