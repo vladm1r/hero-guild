@@ -18,7 +18,7 @@ const navItems = [
 </script>
 
 <template>
-  <div class="flex space-x-2">
+  <div class="flex space-x-2 justify-center">
     <nav-item v-for="navItem in navItems" :link="navItem.link">
       <v-icon :name="navItem.icon" scale="2.5" fill="white" />
     </nav-item>
