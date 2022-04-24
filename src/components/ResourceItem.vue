@@ -1,5 +1,5 @@
 <script setup>
-import { resourceIcons } from "../constants/resourceConstants.js";
+import { resourceIcons } from "../constants/resourceConstants";
 
 const props = defineProps({
   name: String,
