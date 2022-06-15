@@ -7,7 +7,7 @@ const { gold } = storeToRefs(resources);
 
 function onClickMoney() {
   resources.$patch({
-    gold: gold.value + 50,
+    gold: gold.value + 500,
   });
 }
 </script>
