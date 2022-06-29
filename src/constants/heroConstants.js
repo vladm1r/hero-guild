@@ -4,3 +4,5 @@ export const heroStatsIcons = {
   intelligence: "gi-brain",
   stamina: "gi-heart-beats",
 };
+
+export const defaultHero = ["strength", "dexterity", "intelligence", "stamina"];

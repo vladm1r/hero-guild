@@ -13,5 +13,12 @@ export const GUILD = {
     4: "A",
     5: "S",
   },
+  heroStatsMax: {
+    1: 10,
+    2: 20,
+    3: 30,
+    4: 40,
+    5: 50,
+  },
   max: 5,
 };
