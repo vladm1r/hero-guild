@@ -8,7 +8,7 @@ class HeroService {
     for (let stat of defaultHero) {
       let item = {};
       item.name = stat;
-      item.value = Math.round(random.gaussian(0, GUILD.heroStatsMax[lvl], 1));
+      item.value = Math.round(random.gaussian(0, GUILD[lvl].heroStatsMax, 1));
       stats.push(item);
     }
     return stats;

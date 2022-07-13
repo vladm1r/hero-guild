@@ -2,15 +2,15 @@ import { GUILD } from "../constants/buildingConstants";
 
 class BuildingsService {
   getGuildRank(level) {
-    return GUILD.ranks[level];
+    return GUILD[level].name;
   }
 
   getGuildPrice(level) {
-    return GUILD.prices[level];
+    return GUILD[level].price;
   }
 
   getGuildMax() {
-    return GUILD.max;
+    return GUILD.length;
   }
 }
 

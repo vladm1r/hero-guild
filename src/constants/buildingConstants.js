@@ -1,24 +1,32 @@
-export const GUILD = {
-  prices: {
-    1: 0,
-    2: 100,
-    3: 300,
-    4: 700,
-    5: 1500,
+export const GUILD = [
+  {
+    id: 0,
+    name: "D",
+    price: 0,
+    heroStatsMax: 10,
   },
-  ranks: {
-    1: "D",
-    2: "C",
-    3: "B",
-    4: "A",
-    5: "S",
+  {
+    id: 1,
+    name: "C",
+    price: 100,
+    heroStatsMax: 20,
   },
-  heroStatsMax: {
-    1: 10,
-    2: 20,
-    3: 30,
-    4: 40,
-    5: 50,
+  {
+    id: 2,
+    name: "B",
+    price: 300,
+    heroStatsMax: 30,
   },
-  max: 5,
-};
+  {
+    id: 3,
+    name: "A",
+    price: 700,
+    heroStatsMax: 40,
+  },
+  {
+    id: 4,
+    name: "S",
+    price: 1500,
+    heroStatsMax: 50,
+  },
+];
