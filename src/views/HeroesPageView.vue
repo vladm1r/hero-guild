@@ -1,12 +1,18 @@
 <script setup>
+import { storeToRefs } from "pinia";
 import HeroItem from "../components/HeroItem.vue";
+import { useBuildingsStore } from "../stores/buildingsStore";
 import { heroService } from "../services/heroService";
 import { ref } from "@vue/reactivity";
+
+const buildings = useBuildingsStore();
+
+const { guild } = storeToRefs(buildings);
 
 let heroStats = ref([]);
 
 function onClickRoll() {
-  heroStats.value = heroService.generateNewStats(5);
+  heroStats.value = heroService.generateNewStats(guild.value);
 }
 </script>
 
